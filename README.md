@@ -1,2 +1,0 @@
-# interactivecapstone16
-No.
