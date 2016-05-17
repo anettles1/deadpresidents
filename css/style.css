@@ -41,13 +41,16 @@ h1,h2,h3{
 	color:white;
 	font-size:100px;
 	padding-top:200px; 
+	text-shadow: 2px 0 #2a2b2f;
+	color: #47582c;
 }
 
 .dek{
 	position: relative;
 	color: #fec627;
-	font-size:50px;
+	font-size:40px;
 	padding-left:5px;
+	text-shadow: 2px 0 #2a2b2f;
 }
 
 .subheds{
