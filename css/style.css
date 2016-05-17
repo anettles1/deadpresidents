@@ -1,5 +1,8 @@
 /*CSS*/
 
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
 p{
 	color:blue;
 }
