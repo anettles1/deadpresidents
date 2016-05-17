@@ -16,17 +16,38 @@ Gold: #fec627*/
 	
 }
 
+#video-background {
+  position: absolute;
+  right: 0; 
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto; 
+  z-index: -100;
+}
+
+#jbottom {
+	position: relative;
+	padding-top:310px;
+
+}
+
 h1,h2,h3{
 	font-family: 'Roboto Slab', serif;
 }
 
 .hed{
-	color:black;
-	font-size:100px; 
+	position: relative;
+	color:white;
+	font-size:100px;
+	padding-top:200px; 
 }
 
 .dek{
+	position: relative;
+	color: #fec627;
 	font-size:50px;
+	padding-left:5px;
 }
 
 .subheds{
