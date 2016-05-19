@@ -29,20 +29,32 @@ h1,h2,h3{
 	font-family: 'Roboto Slab', serif;
 }
 
-.hed {
+#hed {
 	color:white;
 	font-size:150px;
 	text-shadow: 1px 1px #2a2b2f;
 	color: #47582c;
+	padding-left:50px;
 }
 
-.dek{
+#dek{
 	color: #fec627;
 	font-size:40px;
 	text-shadow: 1px 1px #2a2b2f;
+	padding-bottom: 500px;
+	padding-left:100px;
+}
+
+#byline {
+	font-size:18px;
+}
+
+#jtop {
+	padding-top:20px;
 }
 
 #jbottom {
+	border:1px solid #2a2b2f;
 	padding-top:10px;
 }
 
@@ -109,4 +121,14 @@ figure.show{
 	font-family: 'Open Sans', sans-serif;
 	font-size:1.3em;
 	color:black;
+}
+
+#white-cyc {
+	min-width:100%;
+	min-height:100%;
+}
+
+#jbottomright {
+	padding-top:10px;
+	font-size:30px;
 }
