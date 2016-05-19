@@ -25,13 +25,6 @@ Gold: #fec627*/
   z-index: -100;
 }
 
-#jbottom {
-	position: relative;
-	padding-top:490px;
-	padding-left:650px;
-
-}
-
 h1,h2,h3{
 	font-family: 'Roboto Slab', serif;
 }
@@ -47,6 +40,10 @@ h1,h2,h3{
 	color: #fec627;
 	font-size:40px;
 	text-shadow: 1px 1px #2a2b2f;
+}
+
+#jbottom {
+	padding-top:10px;
 }
 
 p {
