@@ -51,3 +51,62 @@ p {
 	font-size:15px;
 	color:black;
 }
+
+
+/* Recession Animation CSS*/
+.diy-slideshow{
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+figure{
+  position: absolute;
+  opacity: 0;
+  transition: 1s opacity;
+}
+
+figure.show{
+  opacity: 1;
+  position: static;
+  transition: 1s opacity;
+}
+.next, .prev{
+  color: #fff;
+  position: absolute;
+  background: rgba(0,0,0, .6);
+  top: 50%;
+  z-index: 1;
+  font-size: 2em;
+  margin-top: -.75em;
+  opacity: .3;
+  user-select: none;
+}
+.next:hover, .prev:hover{
+  cursor: pointer;
+  opacity: 1;
+}
+.next{
+  right: 0;
+  padding: 10px 5px 15px 10px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.prev{
+  left: 0;
+  padding: 10px 10px 15px 5px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.chartcap{
+	text-align: right;
+	font-style: oblique;
+	font-size: 12px;
+}
+
+.reccaption{
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-size:15px;
+	color:black;
+}

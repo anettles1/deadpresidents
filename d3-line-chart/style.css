@@ -1,0 +1,69 @@
+body {
+  font: 10px sans-serif;
+}
+
+
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: geometricPrecision;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.line {
+  fill: none;
+  stroke: #147693;
+  stroke-width: 2px;
+}
+
+#container{
+	margin-top: 5em;
+	background-color: #FDFFF9;
+}
+.chart,.narrative{
+	float:left;
+}
+
+.chart{
+	width:60%;
+}
+
+.narrative{
+	width: 35%;
+	margin-left: 5%;
+}
+
+.dataRef{
+	font-family: 'PT Sans Narrow',sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 15px;
+    line-height: 15px;
+    margin: 0 0 15px;
+    color: #b3b3b3;
+}
+
+.narr-text{
+	font-family: 'PT Serif',serif;
+    font-size: 16px;
+    line-height: 1.3em;
+    color: #737373;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+h2{
+	font-family: 'PT Sans Narrow',sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 46px;
+    text-align: left;
+    margin-bottom: .2em;
+}
+

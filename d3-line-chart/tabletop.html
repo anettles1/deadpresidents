@@ -1,0 +1,18 @@
+<script type="text/javascript" src="tabletop.js"></script>
+<script type="text/javascript">
+  window.onload = function() { init() };
+
+  var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1JbN_9SSQfAWTVNhfs3r-L6dZyUgLaf5lvz8bbHBLnL4/pubhtml';
+
+  function init() {
+    Tabletop.init( { key: public_spreadsheet_url,
+                     callback: showInfo,
+                     simpleSheet: true } )
+  }
+
+  function showInfo(data, tabletop) {
+    alert("Successfully processed!")
+    console.log(data);
+    window.data = data;
+  }
+</script>
