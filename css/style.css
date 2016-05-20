@@ -48,7 +48,7 @@ h1,h2,h3{
 
 p {
 	font-family: 'Open Sans', sans-serif;
-	font-size:15px;
+	font-size:1.3em;
 	color:black;
 }
 
@@ -101,12 +101,12 @@ figure.show{
 .chartcap{
 	text-align: right;
 	font-style: oblique;
-	font-size: 12px;
+	font-size: 1em;
 }
 
 .reccaption{
 	text-align: center;
 	font-family: 'Open Sans', sans-serif;
-	font-size:15px;
+	font-size:1.3em;
 	color:black;
 }
