@@ -1,43 +1,33 @@
-/*Custom JS goes here*/
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
 
-/*Script for slide show*/
-var counter = 0, // to keep track of current slide
-    $items = $('.diy-slideshow figure'), // a collection of all of the slides, caching for performance
-    numItems = $items.length; // total number of slides
-
-// this function is what cycles the slides, showing the next or previous slide and hiding all the others
-var showCurrent = function(){
-    var itemToShow = Math.abs(counter%numItems);// uses remainder (aka modulo) operator to get the actual index of the element to show  
-   
-  $items.removeClass('show'); // remove .show from whichever element currently has it
-  $items.eq(itemToShow).addClass('show');    
-};
-
-// add click events to prev & next buttons 
-$('.next').on('click', function(){
-    counter++;
-    showCurrent(); 
-});
-$('.prev').on('click', function(){
-    counter--;
-    showCurrent(); 
-});
-
-// if touch events are supported then add swipe interactions using TouchSwipe https://github.com/mattbryson/TouchSwipe-Jquery-Plugin
-if('ontouchstart' in window){
-  $('.diy-slideshow').swipe({
-    swipeLeft:function() {
-      counter++;
-      showCurrent(); 
-    },
-    swipeRight:function() {
-      counter--;
-      showCurrent(); 
-    }
-  });
+body {
+  font: 10px sans-serif;
 }
 
-/*Scrip for charts*/
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+</style>
+<body>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script>
+
 var margin = {top: 20, right: 80, bottom: 30, left: 50},
     width = 960 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
@@ -65,7 +55,7 @@ var line = d3.svg.line()
     .x(function(d) { return x(d.date); })
     .y(function(d) { return y(d.temperature); });
 
-var svg = d3.select("#sharechart").append("svg")
+var svg = d3.select("body").append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
   .append("g")
@@ -128,3 +118,5 @@ d3.tsv("sharedata.tsv", function(error, data) {
       .attr("dy", ".35em")
       .text(function(d) { return d.name; });
 });
+
+</script>
