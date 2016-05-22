@@ -49,19 +49,21 @@ h1,h2,h3{
 	font-size:18px;
 }
 
-#jtop {
+#top-one {
 	padding-top:20px;
 }
 
-#jbottom {
-	border:1px solid #2a2b2f;
+#top-two {
 	padding-top:10px;
+}
+
+#nut-graf-col {
+	border-left:3px solid #47582c;
 }
 
 p {
 	font-family: 'Open Sans', sans-serif;
 	font-size:1.3em;
-	color:black;
 }
 
 
