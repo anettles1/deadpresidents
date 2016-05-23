@@ -37,20 +37,176 @@ if('ontouchstart' in window){
   });
 }
 
-/*Scrip for charts*/
-/*sharechart*/
+/*Script for charts*/
+
+/*Monthly cash payment transactions by household income groups*/
 var chart = c3.generate({
-    bindto: '#sharechart',
+  bindto: d3.select('#cashincomechart'),
     data: {
-        xs: {
-            'data1': 'x1',
-            'data2': 'x2',
-        },
-        columns: [
-            ['x1', 10, 30, 45, 50, 70, 100],
-            ['x2', 30, 50, 75, 100, 120],
-            ['data1', 30, 200, 100, 400, 150, 250],
-            ['data2', 20, 180, 240, 100, 190]
-        ]
+      columns: [
+        ['Less than $25K', 57],
+        ['$25K to $50K', 41],
+        ['$50K to $75K', 38],
+        ['$75K to $100K', 33],
+        ['$100K to $125K', 33],
+        ['$125K to $200K', 35],
+        ['$200K Plus', 33]
+      ],
+      type: 'bar'
+      
+    },
+    bar: {
+        width: {
+            ratio: 0.5
+        }
+      
     }
 });
+
+/*Customer cash payment preference by household income groups*/
+var chart = c3.generate({
+  bindto: d3.select('#incomeprefchart'),
+    data: {
+      columns: [
+        ['Less than $25K', 55],
+        ['$25K to $50K', 29],
+        ['$50K to $75K', 22],
+        ['$75K to $100K', 16],
+        ['$100K to $125K', 16],
+        ['$125K to $200K', 14],
+        ['$200K Plus', 10]
+      ],
+      type: 'bar'
+      
+    },
+    bar: {
+        width: {
+            ratio: 0.5
+        }
+    }
+});
+
+/*Non-bill payments payment use by transaction amount; WIP to get the 'Cash', 'Check', 'Credit', 'Debit', 'Other' to show instead of 1, 2, 3, 4, 5*/
+var chart = c3.generate({
+  bindto: d3.select('#nonbilltranschart'),
+    data: {
+      columns: [
+       /* ['Cash', 'Check', 'Credit', 'Debit', 'Other'],*/
+            ['$0 to $9.99', 66.0,0.3,10.2,18.4,5.1],
+            ['$10 to $24.99', 47.0, 2.8,  19.9, 27.6, 2.7],
+        ['$25 to $49.99', 26.2, 5.7,26.7,36.4,5.0],
+       ['$50 to $99.99', 19.1,7.0,31.6,38.0,4.4],
+        ['$100 and Over', 16.3,15.5,31.9,27.0,9.2]
+        ],
+        type: 'bar',
+    },
+    bar: {
+        width: {
+            ratio: 0.5 // this makes bar width 50% of length between ticks
+        }
+        // or
+        //width: 100 // this makes bar width 100px
+      
+    }
+});
+
+/*Non-bill payments payment use by payment type; will copy from #nonbilltranschart once I figure that part out*/
+
+
+/*Total payments by percentage share*/
+var chart = c3.generate({
+  bindto: d3.select('#totpaychart'),
+  data: {
+    x: 'x',
+    columns: [
+      ['x', '2011', '2012', '2013'],
+      ['Cash', 27.6,26.8,26.3],
+      ['Check', 9.8,9.5,8.4],
+    ['Money Order', 5,0.8,0.5],
+    ['Payment Cards', 51.7,52.8,54.7],
+    ['Debit', 30.5,29.9,31.3],
+     ['Credit or Charge', 20.3,21.6,22.5],
+     ['Prepaid', 0.8,1.2,1]
+    ],
+    type: 'bar',
+  },
+  axis: {
+  x: {
+    label: {
+       text: 'Year',
+       position: 'outer-center',
+          },
+  y: {
+     label: {
+       text: 'Share of Consumer Payments',
+     }
+        },
+  }
+  }                  
+});
+
+
+/*Mobile Payments*/
+var chart = c3.generate({
+  bindto: d3.select('#mobilechart'),
+  data: {
+    x: 'x',
+    columns: [
+      ['x','2011', '2012', '2013'],
+      ['Used mobile payments on an annual basis', 12.3, 18, 35.9],
+      ['Text/SMS', 2.2, 2.8, 12.2],
+    ['Scanned a barcode', 2.2, 2, 6.7],
+    ['Contactless', 1.3, 1, 2.1],
+    ['used mobile phone with a web browser', 8.2,12, 21.7],
+      ['Used a mobile app', 6,7,8.1],
+   
+    ['Swiped card in device attached to mobile phone', 0, 6.4,20.5],
+    ['Made an in app purchase', 0, 0, 10.8]
+   ],
+    type: 'bar',
+  },
+  axis: {
+  x: {
+    label: {
+       text: 'Year',
+       position: 'outer-center',
+          },
+  y: {
+     label: {
+       text: 'Share of Consumer Payments',
+     }
+        },
+  }
+  }                  
+});
+
+
+/*Share of consumer payments by type*/
+var chart = c3.generate({
+  bindto: d3.select('#sharechart'),
+  data: {
+    x: 'x',
+    columns: [
+      ['x', '2008', '2009', '2010', '2011', '2012', '2013'],
+      ['Debit Card', 30.14, 28.92, 31.33, 30.53, 29.93, 31.15],
+      ['Cash', 21.83,30.09,28.62,27.6,26.76,26.35],
+    ['Credit Card', 20.87,17.08,18.21,20.31,21.63,22.54],
+    ['Check', 13.38,12.18,10.25,9.8,9.51,8.41],
+    ['Banking', 11.2,8.86,9.01,9.39,9.39,9.21]  
+    ]
+  },
+  axis: {
+  x: {
+    label: {
+       text: 'Year',
+       position: 'outer-center',
+          },
+  y: {
+     label: {
+       text: 'Share of Consumer Payments',
+     }
+        },
+  }
+  }                  
+});
+
