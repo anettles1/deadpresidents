@@ -52,11 +52,11 @@ h1,h2,h3{
 	font-weight:400;
 }
 
-#top-one {
+#first-top {
 	padding-top:20px;
 }
 
-#top-two {
+#first-bottom {
 	padding-top:10px;
 }
 
@@ -80,6 +80,16 @@ p {
 	font-family: 'Open Sans', sans-serif;
 	font-size:1.3em;
 	font-weight:300;
+}
+
+a {
+	color:#47582c;
+	font-weight:400;
+
+}
+
+a:hover {
+	color:#fec627;
 }
 
 #gates {
