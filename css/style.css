@@ -27,6 +27,7 @@ Gold: #fec627*/
 
 h1,h2,h3{
 	font-family: 'Roboto Slab', serif;
+	color: #47582c;
 }
 
 #hed {
@@ -47,6 +48,8 @@ h1,h2,h3{
 
 #byline {
 	font-size:18px;
+	color:#47582c;
+	font-weight:400;
 }
 
 #top-one {
@@ -57,15 +60,37 @@ h1,h2,h3{
 	padding-top:10px;
 }
 
+#white-cyc {
+	min-width:100%;
+	min-height:100%;
+}
+
+#white-cyc-col{
+	padding-left:3%;
+}
+
+
 #nut-graf-col {
 	border-left:3px solid #47582c;
+	padding-right:7%;
+
 }
 
 p {
 	font-family: 'Open Sans', sans-serif;
 	font-size:1.3em;
+	font-weight:300;
 }
 
+#gates {
+	padding-top:20px;
+	padding-bottom:20px;
+	padding-left:100px;
+	padding-right:100px;
+	width:100%;
+	align-content:center;
+
+}
 
 /* Recession Animation CSS*/
 .diy-slideshow{
@@ -123,14 +148,4 @@ figure.show{
 	font-family: 'Open Sans', sans-serif;
 	font-size:1.3em;
 	color:black;
-}
-
-#white-cyc {
-	min-width:100%;
-	min-height:100%;
-}
-
-#jbottomright {
-	padding-top:10px;
-	font-size:30px;
 }
