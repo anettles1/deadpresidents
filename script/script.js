@@ -210,3 +210,34 @@ var chart = c3.generate({
   }                  
 });
 
+/*non-bill type chart*/
+var chart = c3.generate({
+    bindto: '#nonbilltypechart',
+    data: {
+        columns: [
+            ['Cash', 24.1, 46.1],
+            ['Check', 14.1, 3.6],
+            ['Credit Card', 27.6, 19.2],
+            ['Debit Card', 27.9, 26.4],
+            ['Other', 6.3, 4.8]
+            
+        ],
+        type: 'bar',
+        groups: [
+            ['Cash', 'Check', 'Credit Card', 'Debit Card', 'Other']
+        ]
+    },
+    bar:{
+        width:{
+            ratio:.3
+        }
+    },
+    
+    axis: {
+        x: {
+            type: 'category',
+            categories: ['Value','Volume']
+        },
+        rotated:true
+    }
+});
