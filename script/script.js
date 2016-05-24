@@ -39,60 +39,47 @@ if('ontouchstart' in window){
 
 /*Script for charts*/
 
-/*Monthly cash payment transactions by household income groups*/
-var chart = c3.generate({
-  bindto: d3.select('#cashincomechart'),
-    data: {
-      columns: [
-        ['Less than $25K', 57],
-        ['$25K to $50K', 41],
-        ['$50K to $75K', 38],
-        ['$75K to $100K', 33],
-        ['$100K to $125K', 33],
-        ['$125K to $200K', 35],
-        ['$200K Plus', 33]
-      ],
-      type: 'bar'
-      
-    },
-    bar: {
-        width: {
-            ratio: 0.5
-        }
-      
-    }
-});
-
 /*Customer cash payment preference by household income groups*/
 var chart = c3.generate({
-  bindto: d3.select('#incomeprefchart'),
+    bindto: d3.select('#incomeprefchart'),
     data: {
-      columns: [
-        ['Less than $25K', 55],
-        ['$25K to $50K', 29],
-        ['$50K to $75K', 22],
-        ['$75K to $100K', 16],
-        ['$100K to $125K', 16],
-        ['$125K to $200K', 14],
-        ['$200K Plus', 10]
-      ],
-      type: 'bar'
-      
+        columns: [
+            ['Usage', 57, 33, 33, 33, 35, 33,33],
+            ['Preference', 55, 29, 22, 16, 16, 14, 10],
+        ],
+        types: {
+            Usage: 'bar',
+            Preference: 'line',
+        },
+    
     },
+
+    //axis
+    axis: {
+        y2: {
+            show: true,
+            label:'% of customers'
+        },
+
+        x : {
+            type : 'category',
+            categories: ['Less than $25K', '$25K to $50K', '$50K to $75K', '$75K to $100K', '$125K to $200K', '$200K Plus'],
+        },
+    },
+    //grid
     grid: {
         y: {
-            show:true
-        },
-        x:{
-            show:true
-        }
+            max: 100,
+            min: 0,
+            lines: [
+                {value: 33, text: 'one third of monthly transactions', axis:'y1', position:'middle'},
+                ]
+            },
     },
-    bar: {
-        width: {
-            ratio: 0.5
-        }
-    }
 
+    color:{
+        pattern: ['#47582c','#fec627']
+    },
 });
 
 /*Non-bill payments payment use by transaction amount; WIP to get the 'Cash', 'Check', 'Credit', 'Debit', 'Other' to show instead of 1, 2, 3, 4, 5*/
