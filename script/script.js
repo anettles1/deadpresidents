@@ -79,11 +79,20 @@ var chart = c3.generate({
       type: 'bar'
       
     },
+    grid: {
+        y: {
+            show:true
+        },
+        x:{
+            show:true
+        }
+    },
     bar: {
         width: {
             ratio: 0.5
         }
     }
+
 });
 
 /*Non-bill payments payment use by transaction amount; WIP to get the 'Cash', 'Check', 'Credit', 'Debit', 'Other' to show instead of 1, 2, 3, 4, 5*/
@@ -144,8 +153,18 @@ var chart = c3.generate({
     ],
     type: 'bar',
   },
+<<<<<<< HEAD
   color:{
         pattern: ['#2a2b2f', '#484a51', '#6c6f7a','#9599a5', '#9bb26c', '#47582c', '#fec627' ]
+=======
+  grid: {
+        y: {
+            show:true
+        },
+        x:{
+            show:true
+        }
+>>>>>>> origin/master
     },
   axis: {
   x: {
@@ -187,6 +206,14 @@ var chart = c3.generate({
    ],
     type: 'bar',
   },
+  grid: {
+        y: {
+            show:true
+        },
+        x:{
+            show:true
+        }
+    },
   axis: {
   x: {
     label: {
@@ -226,8 +253,18 @@ var chart = c3.generate({
     ['Banking', 11.2,8.86,9.01,9.39,9.39,9.21]  
     ]
   },
+<<<<<<< HEAD
   color:{
         pattern: ['#6c6f7a', '#9bb26c','#484a51','#2a2b2f', '#fec627']
+=======
+  grid: {
+        y: {
+            show:true
+        },
+        x:{
+            show:true
+        }
+>>>>>>> origin/master
     },
   axis: {
   x: {

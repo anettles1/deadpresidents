@@ -1,6 +1,5 @@
 /*CSS*/
 
-<<<<<<< HEAD
 /*FONTS!*/
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600,600italic,700,800italic,800,700italic);
@@ -24,7 +23,7 @@ Gold: #fec627*/
     width: auto;
     height: auto;
     z-index: -100;
-    transform: translateX(-50%) translateY(-50%);
+   transform: translateX(-50%) translateY(-50%);
    margin-bottom:60px;
 
 }
@@ -32,10 +31,10 @@ Gold: #fec627*/
 h1,h2,h3{
 	font-family: 'Roboto Slab', serif;
 	color: #47582c;
+	font-weight:400;
 }
 
 #hed {
-	color:white;
 	font-size:150px;
 	text-shadow: 1px 1px #2a2b2f;
 	color: #47582c;
@@ -82,7 +81,7 @@ h1,h2,h3{
 }
 
 p {
-	font-family: 'Open Sans', sans-serif;
+	font-family:'Open Sans', sans-serif;
 	font-size:1.3em;
 	font-weight:300;
 }
