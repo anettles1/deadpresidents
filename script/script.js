@@ -53,8 +53,6 @@ var chart = c3.generate({
         },
     
     },
-
-    //axis
     axis: {
         y2: {
             show: true,
@@ -66,7 +64,7 @@ var chart = c3.generate({
             categories: ['Less than $25K', '$25K to $50K', '$50K to $75K', '$75K to $100K', '$125K to $200K', '$200K Plus'],
         },
     },
-    //grid
+
     grid: {
         y: {
             max: 100,
@@ -290,4 +288,9 @@ var chart = c3.generate({
         },
         rotated:true
     },
+    grid: {
+      y:{
+        show:true
+      }
+    }
 });
