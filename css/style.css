@@ -63,8 +63,6 @@ h3 {
 	font-size:1.4em;
 	color:#47582c;
 	font-weight:400;
-	margin-top: 0em;
-    margin-bottom: 1.5em;
 }
 
 #first-top {
@@ -78,6 +76,17 @@ h3 {
 #white-cyc {
 	min-width:100%;
 	min-height:100%;
+}
+
+#white-cyc-col{
+	padding-left:3%;
+}
+
+
+#nut-graf-col {
+	border-left:3px solid #47582c;
+	padding-right:7%;
+
 }
 
 p {
