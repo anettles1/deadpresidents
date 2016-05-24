@@ -234,14 +234,6 @@ var chart = c3.generate({
   color:{
         pattern: ['#6c6f7a', '#9bb26c','#484a51','#2a2b2f', '#fec627']
   },
-  grid: {
-        y: {
-            show:true
-        },
-        x:{
-            show:true
-        }
-    },
   axis: {
   x: {
     label: {
@@ -254,7 +246,14 @@ var chart = c3.generate({
      }
         },
   }
-  }                  
+  }  ,
+   grid: {
+        x: {
+            lines:[ 
+                {value:'2009', text:'Cash outpaced other payment types', position:'middle'},
+               ] 
+            },
+    },                
 });
 
 /*non-bill type chart*/
