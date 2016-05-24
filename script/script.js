@@ -79,11 +79,20 @@ var chart = c3.generate({
       type: 'bar'
       
     },
+    grid: {
+        y: {
+            show:true
+        },
+        x:{
+            show:true
+        }
+    },
     bar: {
         width: {
             ratio: 0.5
         }
     }
+
 });
 
 /*Non-bill payments payment use by transaction amount; WIP to get the 'Cash', 'Check', 'Credit', 'Debit', 'Other' to show instead of 1, 2, 3, 4, 5*/
@@ -145,6 +154,14 @@ var chart = c3.generate({
     ],
     type: 'bar',
   },
+  grid: {
+        y: {
+            show:true
+        },
+        x:{
+            show:true
+        }
+    },
   axis: {
   x: {
     label: {
@@ -180,6 +197,14 @@ var chart = c3.generate({
    ],
     type: 'bar',
   },
+  grid: {
+        y: {
+            show:true
+        },
+        x:{
+            show:true
+        }
+    },
   axis: {
   x: {
     label: {
@@ -210,6 +235,14 @@ var chart = c3.generate({
     ['Banking', 11.2,8.86,9.01,9.39,9.39,9.21]  
     ]
   },
+  grid: {
+        y: {
+            show:true
+        },
+        x:{
+            show:true
+        }
+    },
   axis: {
   x: {
     label: {
