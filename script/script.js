@@ -88,27 +88,40 @@ var chart = c3.generate({
 
 /*Non-bill payments payment use by transaction amount; WIP to get the 'Cash', 'Check', 'Credit', 'Debit', 'Other' to show instead of 1, 2, 3, 4, 5*/
 var chart = c3.generate({
-  bindto: '#nonbilltranschart',
+  bindto: d3.select('#nonbilltranschart'),
     data: {
       columns: [
-       /* ['Cash', 'Check', 'Credit', 'Debit', 'Other'],*/
             ['$0 to $9.99', 66.0,0.3,10.2,18.4,5.1],
             ['$10 to $24.99', 47.0, 2.8,  19.9, 27.6, 2.7],
         ['$25 to $49.99', 26.2, 5.7,26.7,36.4,5.0],
-       ['$50 to $99.99', 19.1,7.0,31.6,38.0,4.4],
-        ['$100 and Over', 16.3,15.5,31.9,27.0,9.2]
+       ['$50 to $99.99', 19.1,7.0,31.6,38.0,4.4]
+
         ],
         type: 'bar',
+    groups: [
+            ['$0 to $9.99', '$10 to $24.99', '$25 to $49.99', '$50 to $99.99', '$100 and Over']
+        ]
     },
-    bar: {
-        width: {
-            ratio: 0.5 // this makes bar width 50% of length between ticks
+    grid: {
+        y: {
+            lines: [{value:0}]
         }
-        // or
-        //width: 100 // this makes bar width 100px
-      
     }
 });
+
+setTimeout(function () {
+    chart.groups([['$0 to $9.99', '$10 to $24.99', '$25 to $49.99', '$50 to $99.99', '$100 and Over']])
+}, 1000);
+
+setTimeout(function () {
+    chart.load({
+        columns: [['$100 and Over', 16.3,15.5,31.9,27.0,9.2]]
+    });
+}, 1500);
+
+setTimeout(function () {
+    chart.groups(['$0 to $9.99', '$10 to $24.99', '$25 to $49.99', '$50 to $99.99', '$100 and Over'])
+}, 2000);
 
 /*Non-bill payments payment use by payment type; will copy from #nonbilltranschart once I figure that part out*/
 
