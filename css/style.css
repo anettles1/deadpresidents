@@ -16,13 +16,20 @@ Gold: #fec627*/
 	
 }
 
+
 #video-background {
-  position: absolute;
-  right: 0; 
-  bottom: 0;
-  min-width: 100%; 
-  min-height: 100%;
-  z-index: -100;
+
+   position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+   margin-bottom:60px;
+
 }
 
 h1,h2,h3{
@@ -53,11 +60,11 @@ h1,h2,h3{
 }
 
 #first-top {
-	padding-top:20px;
+	padding-top:10px;
 }
 
 #first-bottom {
-	padding-top:10px;
+	padding-top:180px;
 }
 
 #white-cyc {
