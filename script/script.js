@@ -132,8 +132,7 @@ var chart = c3.generate({
       ['x', '2011', '2012', '2013'],
       ['Check', 9.8,9.5,8.4],
       ['Credit or Charge', 20.3,21.6,22.5],
-      ['Debit', 30.5,29.9,31.3],
-      ['Payment Cards', 51.7,52.8,54.7],      
+      ['Debit', 30.5,29.9,31.3],     
       ['Cash', 27.6,26.8,26.3],
       ['Money Order', 5,0.8,0.5],
       ['Prepaid', 0.8,1.2,1]
@@ -180,7 +179,6 @@ var chart = c3.generate({
     x: 'x',
     columns: [
       ['x','2011', '2012', '2013'],
-      ['Used mobile payments on an annual basis', 12.3, 18, 35.9],
       ['Used mobile phone with a web browser', 8.2,12, 21.7],
       ['Used a mobile app', 6,7,8.1],
       ['Text/SMS', 2.2, 2.8, 12.2],
