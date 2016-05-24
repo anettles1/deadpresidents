@@ -88,7 +88,7 @@ var chart = c3.generate({
 
 /*Non-bill payments payment use by transaction amount; WIP to get the 'Cash', 'Check', 'Credit', 'Debit', 'Other' to show instead of 1, 2, 3, 4, 5*/
 var chart = c3.generate({
-  bindto: d3.select('#nonbilltranschart'),
+  bindto: '#nonbilltranschart',
     data: {
       columns: [
        /* ['Cash', 'Check', 'Credit', 'Debit', 'Other'],*/
