@@ -227,7 +227,7 @@ var chart = c3.generate({
 
 /*non-bill type chart*/
 var chart = c3.generate({
-    bindto: '#nonbilltypechart',
+    bindto: d3.select('#nonbilltypechart'),
     data: {
         columns: [
             ['Cash', 24.1, 46.1],
@@ -247,12 +247,20 @@ var chart = c3.generate({
             ratio:.3
         }
     },
-    
+    color:{
+        pattern: ['#89aa55','#2a2b2f', '#484a51', '#6c6f7a', '#fec627']
+    },
     axis: {
         x: {
             type: 'category',
             categories: ['Value','Volume']
         },
         rotated:true
-    }
+    },
+     grid: {
+        
+        y:{
+            show:true
+        }
+    },
 });
