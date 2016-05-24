@@ -114,7 +114,7 @@ var chart = c3.generate({
         }
     },
     color:{
-        pattern: ['#89aa55','#2a2b2f', '#484a51', '#6c6f7a', '#fec627']
+        pattern: ['#9bb26c','#2a2b2f', '#484a51', '#6c6f7a', '#fec627']
     },
     axis: {
         x: {
@@ -127,7 +127,6 @@ var chart = c3.generate({
 
 /*Non-bill payments payment use by payment type; will copy from #nonbilltranschart once I figure that part out*/
 
-
 /*Total payments by percentage share*/
 var chart = c3.generate({
   bindto: d3.select('#totpaychart'),
@@ -135,16 +134,19 @@ var chart = c3.generate({
     x: 'x',
     columns: [
       ['x', '2011', '2012', '2013'],
-      ['Cash', 27.6,26.8,26.3],
       ['Check', 9.8,9.5,8.4],
-    ['Money Order', 5,0.8,0.5],
-    ['Payment Cards', 51.7,52.8,54.7],
-    ['Debit', 30.5,29.9,31.3],
-     ['Credit or Charge', 20.3,21.6,22.5],
-     ['Prepaid', 0.8,1.2,1]
+      ['Credit or Charge', 20.3,21.6,22.5],
+      ['Debit', 30.5,29.9,31.3],
+      ['Payment Cards', 51.7,52.8,54.7],      
+      ['Cash', 27.6,26.8,26.3],
+      ['Money Order', 5,0.8,0.5],
+      ['Prepaid', 0.8,1.2,1]
     ],
     type: 'bar',
   },
+  color:{
+        pattern: ['#2a2b2f', '#484a51', '#6c6f7a','#9599a5', '#9bb26c', '#47582c', '#fec627' ]
+    },
   axis: {
   x: {
     label: {
@@ -157,7 +159,13 @@ var chart = c3.generate({
      }
         },
   }
-  }                  
+  },
+  grid: {
+        y: {
+            show:true
+        },
+       
+    },                  
 });
 
 
@@ -169,14 +177,13 @@ var chart = c3.generate({
     columns: [
       ['x','2011', '2012', '2013'],
       ['Used mobile payments on an annual basis', 12.3, 18, 35.9],
-      ['Text/SMS', 2.2, 2.8, 12.2],
-    ['Scanned a barcode', 2.2, 2, 6.7],
-    ['Contactless', 1.3, 1, 2.1],
-    ['used mobile phone with a web browser', 8.2,12, 21.7],
+      ['Used mobile phone with a web browser', 8.2,12, 21.7],
       ['Used a mobile app', 6,7,8.1],
-   
-    ['Swiped card in device attached to mobile phone', 0, 6.4,20.5],
-    ['Made an in app purchase', 0, 0, 10.8]
+      ['Text/SMS', 2.2, 2.8, 12.2],
+      ['Scanned a barcode', 2.2, 2, 6.7],
+      ['Contactless', 1.3, 1, 2.1],
+      ['Swiped card in device attached to mobile phone', 0, 6.4,20.5],
+      ['Made an in app purchase', 0, 0, 10.8]
    ],
     type: 'bar',
   },
@@ -192,7 +199,16 @@ var chart = c3.generate({
      }
         },
   }
-  }                  
+  },
+  grid: {
+        y: {
+            show:true
+        },
+       
+    },      
+  color:{
+        pattern: ['#0b0b0b','#2a2b2f', '#484a51', '#6c6f7a','#9599a5', '#babdc4', '#9bb26c', '#fec627' ]
+    }
 });
 
 
@@ -210,6 +226,9 @@ var chart = c3.generate({
     ['Banking', 11.2,8.86,9.01,9.39,9.39,9.21]  
     ]
   },
+  color:{
+        pattern: ['#6c6f7a', '#9bb26c','#484a51','#2a2b2f', '#fec627']
+    },
   axis: {
   x: {
     label: {
@@ -248,7 +267,7 @@ var chart = c3.generate({
         }
     },
     color:{
-        pattern: ['#89aa55','#2a2b2f', '#484a51', '#6c6f7a', '#fec627']
+        pattern: ['#9bb26c','#2a2b2f', '#484a51', '#6c6f7a', '#fec627']
     },
     axis: {
         x: {
