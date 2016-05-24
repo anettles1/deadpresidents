@@ -181,3 +181,10 @@ figure.show{
 	font-size:1.3em;
 	color:black;
 }
+
+
+/*for the charts*/
+/*hide tooltip lines of all charts*/
+.c3-xgrid-focus {
+display: none;
+}

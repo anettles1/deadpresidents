@@ -251,7 +251,9 @@ var chart = c3.generate({
         x: {
             lines:[ 
                 {value:'2009', text:'Cash outpaced other payment types', position:'middle'},
-               ] 
+               ] ,
+            show:true
+
             },
     },                
 });
