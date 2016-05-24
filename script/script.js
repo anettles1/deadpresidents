@@ -122,9 +122,11 @@ var chart = c3.generate({
             show:true
         }
     },
+
     color:{
         pattern: ['#9bb26c','#2a2b2f', '#484a51', '#6c6f7a', '#fec627']
     },
+
     axis: {
         x: {
             type: 'category',
@@ -153,10 +155,9 @@ var chart = c3.generate({
     ],
     type: 'bar',
   },
-<<<<<<< HEAD
   color:{
         pattern: ['#2a2b2f', '#484a51', '#6c6f7a','#9599a5', '#9bb26c', '#47582c', '#fec627' ]
-=======
+      },
   grid: {
         y: {
             show:true
@@ -164,7 +165,6 @@ var chart = c3.generate({
         x:{
             show:true
         }
->>>>>>> origin/master
     },
   axis: {
   x: {
@@ -206,31 +206,24 @@ var chart = c3.generate({
    ],
     type: 'bar',
   },
-  grid: {
-        y: {
-            show:true
-        },
-        x:{
-            show:true
-        }
-    },
+ 
   axis: {
-  x: {
-    label: {
-       text: 'Year',
-       position: 'outer-center',
-          },
-  y: {
-     label: {
-       text: 'Share of Consumer Payments',
-     }
+    x: {
+      label: {
+         text: 'Year',
+         position: 'outer-center',
+            }
         },
-  }
+    y: {
+       label: {
+         text: 'Share of Consumer Payments',
+       }
+          },
   },
   grid: {
         y: {
             show:true
-        },
+        }
        
     },      
   color:{
@@ -253,10 +246,9 @@ var chart = c3.generate({
     ['Banking', 11.2,8.86,9.01,9.39,9.39,9.21]  
     ]
   },
-<<<<<<< HEAD
   color:{
         pattern: ['#6c6f7a', '#9bb26c','#484a51','#2a2b2f', '#fec627']
-=======
+  },
   grid: {
         y: {
             show:true
@@ -264,7 +256,6 @@ var chart = c3.generate({
         x:{
             show:true
         }
->>>>>>> origin/master
     },
   axis: {
   x: {
@@ -290,8 +281,7 @@ var chart = c3.generate({
             ['Check', 14.1, 3.6],
             ['Credit Card', 27.6, 19.2],
             ['Debit Card', 27.9, 26.4],
-            ['Other', 6.3, 4.8]
-            
+            ['Other', 6.3, 4.8]        
         ],
         type: 'bar',
         groups: [
@@ -312,11 +302,5 @@ var chart = c3.generate({
             categories: ['Value','Volume']
         },
         rotated:true
-    },
-     grid: {
-        
-        y:{
-            show:true
-        }
     },
 });
