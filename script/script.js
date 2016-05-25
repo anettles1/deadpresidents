@@ -51,24 +51,32 @@ var chart = c3.generate({
             Usage: 'bar',
             Preference: 'line',
         },
-    
+        axes: {
+          Usage: 'y',
+          Preference: 'y2'
+        }
     },
     axis: {
+        y:{
+            label:'% of monthly transactions',
+            max: 100,
+            min: 10
+        },
         y2: {
             show: true,
-            label:'% of customers'
+            label:'% of customers',
+            max: 100,
+            min: 10
         },
 
         x : {
             type : 'category',
-            categories: ['Less than $25K', '$25K to $50K', '$50K to $75K', '$75K to $100K', '$125K to $200K', '$200K Plus'],
+            categories: ['Less than $25K', '$25K to $50K', '$50K to $75K', '$75K to $100K', '$100K to $125K','$125K to $200K', '$200K Plus'],
         },
     },
 
     grid: {
         y: {
-            max: 100,
-            min: 0,
             lines: [
                 {value: 33, text: 'one third of monthly transactions', axis:'y1', position:'middle'},
                 ]
@@ -79,6 +87,7 @@ var chart = c3.generate({
         pattern: ['#47582c','#fec627']
     },
 });
+
 
 /*Non-bill payments payment use by transaction amount; WIP to get the 'Cash', 'Check', 'Credit', 'Debit', 'Other' to show instead of 1, 2, 3, 4, 5*/
 var chart = c3.generate({
