@@ -187,111 +187,64 @@ display: none;
 
 /*parallax*/
 
-#scroll-animate
-{
-  overflow: hidden;
-}
-
-#scroll-animate-main
-{
+.contentone{
+  height: 600px;
   width: 100%;
-  left: 0;
-  position: fixed;
+  padding-top: 50px;
 }
 
-#heightPage,
-#heightScroll
-{
-  width: 10px;
-  top: 0;
-  position: absolute;
-  z-index: 99;
-}
-
-#heightPage
-{
-  left: 0;
-}
-
-#heightScroll
-{
-  right: 0;
-}
-
-header
-{
+.contenttwo{
+  height: 750px;
   width: 100%;
-  height: 100%;
-  background: black no-repeat 50% 50%;
-  top: 0;
-  position: fixed;
-  z-index: -1;
+  padding-top: 50px;
 }
 
-footer
-{
+.contentthree{
+  height: 900px;
   width: 100%;
-  height: 300px;
-  background: gray;
-  bottom: -300px;
-  position: fixed;
-  z-index: -1;
+  padding-top: 50px;
 }
 
-.content
-{
-  height: 20000px;
-  min-height: 1000px;
-  background: #ededed;
-  position: relative;
-  z-index: 1;
+.contentfour{
+  height: 6800px;
+  width: 100%;
+  padding-top: 50px;
 }
 
+.contentfive{
+  height: 7000px;
+  width: 100%;
+  padding-top: 50px;
+}
 
+.contentsix{
+  height: 1750px;
+  width: 100%;
+  padding-top: 50px;
+}
 
-.wrapper-parallax {
-  margin-top: 100%;
-  margin-bottom: 300px;
+.contentseven{
+  height: 2000px;
+  width: 100%;
+  padding-top: 50px;
+}
+
+.contenteight{
+  height: 2000px;
+  width: 100%;
+  padding-top: 50px;
+}
+
+.contentnine{
+  height: 6200px;
+  width: 100%;
+  padding-top: 50px;
+}
+
+.top{   
+  height:1000px; 
+  width:100%
+}
+.parallax-containter{
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
-}
-
-h1{
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  margin: 0;
-  text-transform: uppercase;
-  text-align: center;
-  font-family: Helvetica;
-  font-size: 150px;
-  color: #fff;
-}
-
-header h1{}
-
-.content h1{
-  line-height: 1000px;
-  color: #999;
-}
-
-footer h1
-{
-  line-height: 300px;
-}
-
-header,
-footer,
-#scroll-animate-main
-{
-  -webkit-transition-property: all;
-     -moz-transition-property: all;
-      transition-property: all;
-
-  -webkit-transition-duration: 0.4s;
-     -moz-transition-duration: 0.4s;
-      transition-duration: 0.4s;
-
-  -webkit-transition-timing-function: cubic-bezier(0, 0, 0, 1);
-     -moz-transition-timing-function: cubic-bezier(0, 0, 0, 1);
-      transition-timing-function: cubic-bezier(0, 0, 0, 1);
 }
