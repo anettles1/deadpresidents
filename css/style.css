@@ -22,14 +22,13 @@ Gold: #fec627*/
 
 #video-background {
    position: absolute;
-    top: 50%;
-    left: 50%;
-	max-width:100%;
+    top: 32%;
+    left: 35%;
     width: auto;
     height: auto;
     z-index: -100;
-   transform: translateX(-50%) translateY(-50%);
-   margin-bottom:60px;
+    transform: translateX(-50%) translateY(-50%);
+    margin-bottom:60px;
 
 }
 
@@ -49,6 +48,7 @@ h3 {
 }
 
 #hed {
+	padding-top:200px;
 	font-size:150px;
 	text-shadow: 1px 1px #2a2b2f;
 	color: #47582c;
@@ -60,7 +60,7 @@ h3 {
 	color: #fec627;
 	font-size:40px;
 	text-shadow: 1px 1px #2a2b2f;
-	padding-bottom: 100px;
+	padding-bottom: 350px;
 	text-align:center;
 }
 
