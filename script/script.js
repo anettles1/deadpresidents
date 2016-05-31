@@ -219,7 +219,7 @@ var chart = c3.generate({
        
     },      
   color:{
-        pattern: ['#0b0b0b','#2a2b2f', '#484a51', '#6c6f7a','#9599a5', '#babdc4', '#9bb26c', '#fec627' ]
+        pattern: ['#2a2b2f', '#484a51', '#6c6f7a','#9599a5', '#babdc4', '#9bb26c', '#fec627' ]
     }
 });
 
