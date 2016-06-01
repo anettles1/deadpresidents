@@ -426,6 +426,7 @@ a {
 /*navigation*/
 .navbar a {
   color: #fec627;
+  font-family: 'Roboto Slab', sans-serif;
 }
 
 .navbar a:hover {
