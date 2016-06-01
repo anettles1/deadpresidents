@@ -404,6 +404,7 @@ a {
 }
 
 
+<<<<<<< Updated upstream
 /*back to top button!*/
 #top {
   position: fixed;
@@ -421,3 +422,12 @@ a {
 #top:hover {
   background-color: #9bb26c;
 }
+=======
+/*navigation*/
+.navbar a {
+  color: #fec627;
+}
+
+.navbar a:hover {
+  color:#47582c;
+>>>>>>> Stashed changes

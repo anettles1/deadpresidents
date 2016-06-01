@@ -20,25 +20,33 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
-<body>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 <!--navigation-->
-<nav class="navbar transparent navbar-right">
+<nav class="navbar transparent navbar-right" role="navigation">
     <div class="container">
+<<<<<<< Updated upstream
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+=======
+
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+>>>>>>> Stashed changes
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
 
         </div>
-        <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav mineul" style="font-size:14px;margin-top:9px; color:white;">
-              <li><a href="#firstGraf">Intro</a></li>
-              <li><a href="#currency">Currency of the Common Man</a></li>
-               <li><a href="#marriage">Marriage of Convenience </a></li>
-               <li><a href="#trust">In Cash We Trust</a></li>
-              <li><a href="#empire">Will the Cash Empire Ever Crumble?</a></li>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+              <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+              <li class="hidden"><a class="page-scroll" href="#page-top"></a></li>
+              <li><a class="page-scroll" href="#firstGraf">Intro</a></li>
+              <li><a class="page-scroll" href="#currency">Currency of the Common Man</a></li>
+               <li><a class="page-scroll" href="#marriage">Marriage of Convenience </a></li>
+               <li><a class="page-scroll" href="#trust">In Cash We Trust</a></li>
+              <li><a class="page-scroll" href="#empire">Will the Cash Empire Ever Crumble?</a></li>
             </ul>
         </div>
     </div>
@@ -331,6 +339,9 @@
 	<!--link to JS file-->
 	<script type="text/javascript" src="script/script.js"></script>
 
+    <!-- Scrolling Nav JavaScript -->
+    <script src="bootstrap/js/jquery.easing.min.js"></script>
+    <script src="bootstrap/js/scrolling-nav.js"></script>
 	
      
 
