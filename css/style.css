@@ -34,12 +34,13 @@ Gold: #fec627*/
 
 h1,h2,h3{
 	font-family: 'Roboto Slab', serif;
-	color: #47582c;
+	color: #9bb26c;
 	font-weight:400;
 }
 
 h2 {
 	font-size: 3em;
+	text-shadow: 1px 1px #2a2b2f;
 }
 
 h3 {
@@ -48,25 +49,25 @@ h3 {
 }
 
 #hed {
-	padding-top:150px;
-	font-size:150px;
+	padding-top:180px;
+	font-size:100px;
 	text-shadow: 1px 1px #2a2b2f;
-	color: #47582c;
+	color: #9bb26c;
 	text-align:center;
 	
 }
 
 #dek{
 	color: #fec627;
-	font-size:40px;
+	font-size:35px;
 	text-shadow: 1px 1px #2a2b2f;
-	padding-bottom: 200px;
+	padding-bottom: 450px;
 	text-align:center;
 }
 
 #byline {
 	font-size:1.4em;
-	color:#47582c;
+	color:#9bb26c;
 	font-weight:400;
 	margin-top: 0em;
     margin-bottom: 1.5em;
@@ -95,9 +96,8 @@ p {
 }
 
 a {
-	color:#47582c;
+	color:#9bb26c;
 	font-weight:400;
-
 }
 
 a:hover {
