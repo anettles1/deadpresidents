@@ -407,6 +407,7 @@ a {
 <<<<<<< Updated upstream
 /*back to top button!*/
 #top {
+  font-family: 'Roboto Slab', serif;
   position: fixed;
   bottom: 2em;
   right: 2em;
