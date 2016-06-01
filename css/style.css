@@ -402,3 +402,22 @@ a {
 .icons.white li .reblog-icon {
   color: #ffffff;
 }
+
+
+/*back to top button!*/
+#top {
+  position: fixed;
+  bottom: 2em;
+  right: 2em;
+  text-decoration: none;
+  color: white;
+  background-color:#c8cad0;
+  opacity: .7;
+  font-size: 1.2vw;
+  padding: 1em;
+  display: none;
+  z-index:10000;
+}
+#top:hover {
+  background-color: #47582c;
+}
