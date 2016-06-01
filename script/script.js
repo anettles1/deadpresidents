@@ -59,14 +59,14 @@ var chart = c3.generate({
     axis: {
         y:{
             label:'% of monthly transactions',
-            max: 100,
-            min: 10
+            max: 59,
+            min: 6
         },
         y2: {
             show: true,
             label:'% of customers',
-            max: 100,
-            min: 10
+            max: 59,
+            min: 6
         },
 
         x : {
@@ -84,7 +84,7 @@ var chart = c3.generate({
     },
 
     color:{
-        pattern: ['#47582c','#fec627']
+        pattern: ['#484a51','#fec627']
     },
 });
 
@@ -125,6 +125,12 @@ var chart = c3.generate({
         x: {
             type: 'category',
             categories: ['$0 to $9.99', '$10 to $24.99', '$25 to $49.99', '$50 to $99.99', '$100 and over']
+        },
+        y:{
+          label:'%',
+          max:100,
+          min:10
+
         }
     }
 });
@@ -165,12 +171,11 @@ var chart = c3.generate({
        text: 'Year',
        position: 'outer-center',
           },
+      },
   y: {
-     label: {
-       text: 'Share of Consumer Payments',
-     }
+     label:'% of Consumer Payments',
         },
-  }
+  
   },
   grid: {
         y: {
@@ -208,7 +213,7 @@ var chart = c3.generate({
         },
     y: {
        label: {
-         text: 'Share of Consumer Payments',
+         text: '% of Consumer Payments',
        }
           },
   },
@@ -246,14 +251,14 @@ var chart = c3.generate({
     label: {
        text: 'Year',
        position: 'outer-center',
-          },
+       }
+      },
   y: {
      label: {
-       text: 'Share of Consumer Payments',
+       text: '% of Consumer Payments',
      }
         },
-  }
-  }  ,
+  },
    grid: {
         x: {
             lines:[ 
@@ -294,6 +299,11 @@ var chart = c3.generate({
             type: 'category',
             categories: ['Value','Volume']
         },
+        y:{
+          label:'%',
+          max:100,
+          min:10
+        },
         rotated:true
     },
     grid: {
@@ -302,8 +312,6 @@ var chart = c3.generate({
       }
     }
 });
-
-
 /*parallax*/
 
 /*!
