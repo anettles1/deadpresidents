@@ -405,18 +405,18 @@ a {
 
 /*navigation*/
 .navbar a {
-  color: #fec627;
+  color: white;
   font-family: 'Roboto Slab', sans-serif;
 }
 
 .navbar a:hover {
-  color:#9bb26c;
+  color:#fec627;
 }
 
 #navfixed{
   position: fixed;
   background-color: #9bb26c;
   z-index: 1;
-  width:100%;
-  opacity: 0.8;
+  width:65%;
+  opacity: .9;
 }
