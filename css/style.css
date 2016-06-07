@@ -24,7 +24,7 @@ Gold: #fec627*/
 	color: #4f4f57;
 }
 
-#video-background {
+/*#video-background {
    position: absolute;
     top: 32%;
     left: 32%;
@@ -34,17 +34,36 @@ Gold: #fec627*/
     transform: translateX(-50%) translateY(-50%);
     margin-bottom:60px;
 
+}*/
+
+video {
+  display: block;
+  background: url('headervideo/video.webm') no-repeat;
+  background-size: cover;
+}
+
+
+#video-background {
+  position: fixed;
+  right: 0; 
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto; 
+  height: auto;
+  z-index: -10000;
+  background-attachment: scroll;
 }
 
 h1,h2,h3{
 	font-family: 'Roboto Slab', serif;
 	color: #9bb26c;
-	font-weight:400;
+	font-weight:600;
 }
 
 h2 {
-	font-size: 3em;
-	text-shadow: 1px 1px #2a2b2f;
+	font-size: 5em;
+  margin-top: 1em;
 }
 
 h3 {
@@ -52,21 +71,24 @@ h3 {
 	color:#4f4f57;
 }
 
+h1{
+  margin-bottom: 10px;
+}
+
 #hed {
 	padding-top:180px;
 	font-size:100px;
-	text-shadow: 1px 1px #2a2b2f;
 	color: #9bb26c;
 	text-align:center;
-	
+	font-weight: 
 }
 
 #dek{
 	color: #fec627;
 	font-size:35px;
-	text-shadow: 1px 1px #2a2b2f;
 	padding-bottom: 450px;
 	text-align:center;
+  font-family:'Open Sans', sans-serif;
 }
 
 #byline {
@@ -119,7 +141,9 @@ a:hover {
 }
 
 .minidek {
-  font-style: italic;
+  font-weight: 600;
+  font-family:'Open Sans', sans-serif;
+  color:#4f4f57;
 }
 
 .chartCaption {
@@ -410,5 +434,35 @@ a {
 }
 
 .navbar a:hover {
+<<<<<<< HEAD
   color:#9bb26c;
 >>>>>>> Stashed changes
+=======
+  color:#fec627;
+}
+
+#navfixed{
+  position: fixed;
+  background-color: #9bb26c;
+  z-index: 1;
+  width:100%;
+  float: none;
+  opacity: 1;
+}
+
+
+.videojs-background-wrap {
+      overflow:hidden;
+      position:absolute;
+      height:100%;
+      width:100%;
+      top:0;
+      left:0;
+      z-index: -998;
+    }
+#full-vid {
+      height: 600px;
+      width: 100%;
+      display: inline-block;
+    }
+>>>>>>> origin/master
