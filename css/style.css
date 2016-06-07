@@ -12,16 +12,16 @@ Medium grey: #4f4f57
 Light grey: #9599a5
 Gold: #fec627*/
 *{
-	
+  
 }
 
 .navbar {
-	padding-right:50px;
+  padding-right:50px;
 }
 
 #firstGraf {
-	font-weight:600;
-	color: #4f4f57;
+  font-weight:600;
+  color: #4f4f57;
 }
 
 /*#video-background {
@@ -56,19 +56,19 @@ video {
 }
 
 h1,h2,h3{
-	font-family: 'Roboto Slab', serif;
-	color: #9bb26c;
-	font-weight:600;
+  font-family: 'Roboto Slab', serif;
+  color: #9bb26c;
+  font-weight:600;
 }
 
 h2 {
-	font-size: 5em;
+  font-size: 5em;
   margin-top: 1em;
 }
 
 h3 {
-	font-size: 1.8em;
-	color:#4f4f57;
+  font-size: 1.8em;
+  color:#4f4f57;
 }
 
 h1{
@@ -76,67 +76,67 @@ h1{
 }
 
 #hed {
-	padding-top:180px;
-	font-size:100px;
-	color: #9bb26c;
-	text-align:center;
-	font-weight: 
+  padding-top:180px;
+  font-size:100px;
+  color: #9bb26c;
+  text-align:center;
+  font-weight: 
 }
 
 #dek{
-	color: #fec627;
-	font-size:35px;
-	padding-bottom: 450px;
-	text-align:center;
+  color: #fec627;
+  font-size:35px;
+  padding-bottom: 450px;
+  text-align:center;
   font-family:'Open Sans', sans-serif;
 }
 
 #byline {
-	font-size:1.4em;
-	color:#9bb26c;
-	font-weight:400;
-	margin-top: 0em;
+  font-size:1.4em;
+  color:#9bb26c;
+  font-weight:400;
+  margin-top: 0em;
     margin-bottom: 1.5em;
 }
 
 #first-top {
-	padding-top:10px;
+  padding-top:10px;
 }
 
 #first-bottom {
-	padding-top:180px;
+  padding-top:180px;
 }
 
 #white-cyc {
-	min-width:100%;
-	min-height:100%;
+  min-width:100%;
+  min-height:100%;
 }
 
 p {
-	font-family:'Open Sans', sans-serif;
-	font-size:1.5em;
-	font-weight:300;
-	line-height:40px;
-	margin-top: 0em;
+  font-family:'Open Sans', sans-serif;
+  font-size:1.5em;
+  font-weight:300;
+  line-height:40px;
+  margin-top: 0em;
     margin-bottom: 1.25em;
 }
 
 a {
-	color:#9bb26c;
-	font-weight:400;
+  color:#9bb26c;
+  font-weight:400;
 }
 
 a:hover {
-	color:#fec627;
+  color:#fec627;
 }
 
 #gates {
-	padding-top:20px;
-	padding-bottom:20px;
-	padding-left:100px;
-	padding-right:100px;
-	width:100%;
-	align-content:center;
+  padding-top:20px;
+  padding-bottom:20px;
+  padding-left:100px;
+  padding-right:100px;
+  width:100%;
+  align-content:center;
 
 }
 
@@ -147,9 +147,9 @@ a:hover {
 }
 
 .chartCaption {
-	font-size:16px;
-	font-weight:400;
-	padding-bottom:10px;
+  font-size:16px;
+  font-weight:400;
+  padding-bottom:10px;
 }
 
 /* Recession Animation CSS*/
@@ -198,16 +198,16 @@ figure.show{
 }
 
 .chartcap{
-	text-align: right;
-	font-style: oblique;
-	font-size: 1em;
+  text-align: right;
+  font-style: oblique;
+  font-size: 1em;
 }
 
 .reccaption{
-	text-align: center;
-	font-family: 'Open Sans', sans-serif;
-	font-size:1.3em;
-	color:black;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size:1.3em;
+  color:black;
 }
 /*for the charts*/
 /*hide tooltip lines of all charts*/
@@ -429,15 +429,11 @@ a {
 
 /*navigation*/
 .navbar a {
-  color: #fec627;
+  color: white;
   font-family: 'Roboto Slab', sans-serif;
 }
 
 .navbar a:hover {
-<<<<<<< HEAD
-  color:#9bb26c;
->>>>>>> Stashed changes
-=======
   color:#fec627;
 }
 
@@ -465,4 +461,3 @@ a {
       width: 100%;
       display: inline-block;
     }
->>>>>>> origin/master
