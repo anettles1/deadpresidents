@@ -22,7 +22,7 @@
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 <!--navigation-->
-<nav class="navbar transparent navbar-right" role="navigation">
+<nav class="navbar transparent navbar-static-top" role="navigation" id="navfixed">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -58,9 +58,21 @@
             <div class="col-lg-12">
                 <h1 id="hed">Dead Presidents Society</h1>
                 <h2 id="dek">The cold, hard truth about America's enduring love affair with cash</h2>
-                <video autoplay loop class="fillWidth fadeIn animated" id="video-background">
-                    <source src="headervideo/video.webm" type="video/webm">Your browser does not support the video tag. I suggest you upgrade your browser.
-                </video>
+
+                <video id="bg-video"
+             class="video-js vjs-default-skin"
+             style="position:absolute;top:0;left:0;overflow:hidden;z-index:-998;"
+             height="100%"
+             width="100%"
+             poster="http://video-js.zencoder.com/oceans-clip.png"
+             loop >
+      <p>
+        Your browser doesn't support video. Please <a href="http://browsehappy.com/">upgrade your browser</a> to see the example.
+      </p>
+    <source src="http://dxezz3sne837.cloudfront.net/tmbr_intro_720.mp4" type='video/mp4' />
+    <source src="http://dxezz3sne837.cloudfront.net/tmbr_intro_720.webm" type='video/webm' />
+    <source src="http://dxezz3sne837.cloudfront.net/tmbr_intro_720.ogg" type='video/ogg' />
+    </video>
             </div>
         </div><!--close first-top-->
     </div><!--close topvideo-->
@@ -325,7 +337,9 @@
   <script src="bootstrap/js/jquery.easing.min.js"></script>
   <script src="bootstrap/js/scrolling-nav.js"></script>
 	
-     
+  <!--link to video JS-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/4.11.3/video.js"></script>
+  <script src="http://tmbr.staging.wpengine.com//wp-content/themes/TMBRtwo/assets/js/vendor/video-js/videojs-Background.js"></script>  
 
 </body>
 </html>

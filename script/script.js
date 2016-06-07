@@ -741,3 +741,9 @@ $(document).ready(function() {
         $('html, body').animate({scrollTop: 0}, 300);
       })
     });
+
+
+//video plug-in//
+videojs('bg-video').Background({
+      container   : 'full-vid'
+    });
