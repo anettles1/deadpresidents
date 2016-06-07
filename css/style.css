@@ -461,3 +461,13 @@ a {
       width: 100%;
       display: inline-block;
     }
+
+#fatfooter{
+  background-color: #9bb26c;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  padding-top: 5em;
+  color: white;
+  font-weight: 700;
+  font-size: 1.2em;
+}
