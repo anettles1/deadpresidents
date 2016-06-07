@@ -39,12 +39,12 @@ Gold: #fec627*/
 h1,h2,h3{
 	font-family: 'Roboto Slab', serif;
 	color: #9bb26c;
-	font-weight:400;
+	font-weight:600;
 }
 
 h2 {
-	font-size: 3em;
-	text-shadow: 1px 1px #2a2b2f;
+	font-size: 5em;
+  margin-top: 1em;
 }
 
 h3 {
@@ -52,21 +52,24 @@ h3 {
 	color:#4f4f57;
 }
 
+h1{
+  margin-bottom: 10px;
+}
+
 #hed {
 	padding-top:180px;
 	font-size:100px;
-	text-shadow: 1px 1px #2a2b2f;
 	color: #9bb26c;
 	text-align:center;
-	
+	font-weight: 
 }
 
 #dek{
 	color: #fec627;
 	font-size:35px;
-	text-shadow: 1px 1px #2a2b2f;
 	padding-bottom: 450px;
 	text-align:center;
+  font-family:'Open Sans', sans-serif;
 }
 
 #byline {
@@ -119,7 +122,9 @@ a:hover {
 }
 
 .minidek {
-  font-style: italic;
+  font-weight: 600;
+  font-family:'Open Sans', sans-serif;
+  color:#4f4f57;
 }
 
 .chartCaption {
