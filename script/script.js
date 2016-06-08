@@ -73,10 +73,6 @@ var chart = c3.generate({
         },
 
         x : {
-            label: {
-                text: '2012 Cash Usage and Preference by Household Income',
-                position: 'outer-center'
-            },
             type : 'category',
             categories: ['Less than $25K', '$25K to $50K', '$50K to $75K', '$75K to $100K', '$100K to $125K','$125K to $200K', '$200K Plus'],
         },
@@ -255,10 +251,7 @@ var chart = c3.generate({
   },
   axis: {
   x: {
-    label: {
-       text: 'Share of Consumer Payments by Payment Type, 2008-2013',
-       position: 'outer-center',
-       }
+      label:'year'
       },
   y: {
      label: {
@@ -727,13 +720,13 @@ var chart = c3.generate({
 }(jQuery, window, document));
 
 
-//back to top
+//back to top and share button
 $(document).ready(function() {
       $(window).scroll(function() {
         if ($(this).scrollTop() < 200 || $(this).scrollTop() > $(document).height() - $(window).height() - 300) {
-        $('#top').fadeOut(300);
+        $('#top').fadeOut(300), $('.icons').fadeOut(300);
     } else {
-        $('#top').fadeIn(300);
+        $('#top').fadeIn(300), $('.icons').fadeIn(300);
     }
 });
       
