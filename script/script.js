@@ -727,16 +727,16 @@ var chart = c3.generate({
 }(jQuery, window, document));
 
 
-//back to top button
-$(window).scroll(function() {
-    $(window).scroll(function() {
-        if ($(this).scrollTop() > 200) {
-          $('#top').fadeIn(200);
-        } else {
-          $('#top').fadeOut(200);
-        }
-      });
-      // Animate the scroll to top
+//back to top
+$(document).ready(function() {
+      $(window).scroll(function() {
+        if ($(this).scrollTop() < 200 || $(this).scrollTop() > $(document).height() - $(window).height() - 300) {
+        $('#top').fadeOut(300);
+    } else {
+        $('#top').fadeIn(300);
+    }
+});
+      
       $('#top').click(function(event) {
         event.preventDefault();
         
