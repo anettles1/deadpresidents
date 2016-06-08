@@ -11,9 +11,7 @@ Dark grey: #2a2b2f
 Medium grey: #4f4f57
 Light grey: #9599a5
 Gold: #fec627*/
-*{
-  
-}
+
 
 .navbar {
   padding-right:50px;
@@ -601,5 +599,5 @@ body {
 
 
 .containervideo{
-  max-width: 97.7%;
+  width: 97.85%;
 }
