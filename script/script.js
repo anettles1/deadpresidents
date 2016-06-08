@@ -727,14 +727,15 @@ var chart = c3.generate({
 }(jQuery, window, document));
 
 
-//back to top button!!
+//back to top button
 $(window).scroll(function() {
-    if ($(this).scrollTop() < 200 || $(this).scrollTop() > $(document).height() - $(window).height() - 200) {
-        $('#top').fadeOut(300);
-    } else {
-        $('#top').fadeIn(250);
-    }
-      
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 200) {
+          $('#top').fadeIn(200);
+        } else {
+          $('#top').fadeOut(200);
+        }
+      });
       // Animate the scroll to top
       $('#top').click(function(event) {
         event.preventDefault();
