@@ -751,3 +751,4 @@ $(document).ready(function() {
 videojs('bg-video').Background({
       container   : 'full-vid'
     });
+

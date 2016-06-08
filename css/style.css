@@ -498,3 +498,90 @@ a {
   margin-left: 10%;
   width:40%;
  }
+
+/*video testing*/
+//import font from google
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
+
+// variables
+$gray-base :#000;
+$font-regular : 'Roboto', sans-serif;
+
+// mixins
+@mixin translate($x, $y) {
+  -webkit-transform: translate($x, $y);
+  -ms-transform: translate($x, $y); // IE9 only
+  -o-transform: translate($x, $y);
+  transform: translate($x, $y);
+}
+
+@mixin background-size($size) {
+ -webkit-background-size: $size;
+    -moz-background-size: $size;
+    -o-background-size: $size;
+    background-size: $size ;
+}
+body {
+  margin:0;
+  padding:0;
+  font-family: $font-regular;
+}
+
+.fullscreen-bg {
+  position: absolute;
+  width: 100%;
+  top: -2%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -2000;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba($gray-base, .5);
+        z-index: 1;
+    }
+}
+
+.fullscreen-bg__video {
+  position: absolute;
+  top: -5%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    height: 300%;
+    top: -100%;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    width: 300%;
+    left: -100%;
+  }
+}
+
+@media (max-width: 100%) {
+  .fullscreen-bg {
+    background: url('http://ui.specbee.com/sample/videoframe.jpg') center center / cover no-repeat;
+    @include background-size(cover);
+  }
+
+  .fullscreen-bg__video {
+    display: none;
+  }
+}
+
+
+.containervideo{
+  max-width: 97.7%;
+}
