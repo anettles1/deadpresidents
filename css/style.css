@@ -479,6 +479,7 @@ a {
  }
   #fatfooter a:hover{
   color:#9bb26c;
+  text-decoration: none;
  }
  #fatfooter h1{
   font-size: 3vw;
