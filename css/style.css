@@ -112,6 +112,11 @@ h1{
   min-height:100%;
 }
 
+blockquote p{
+  color: #47582c;
+  font-weight: 400;
+}
+
 p {
   font-family:'Open Sans', sans-serif;
   font-size:1.5em;
