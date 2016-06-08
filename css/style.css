@@ -462,12 +462,38 @@ a {
       display: inline-block;
     }
 
+/*footer*/
 #fatfooter{
-  background-color: #9bb26c;
-  text-align: center;
+  text-align: left;
   font-family: 'Open Sans', sans-serif;
   padding-top: 5em;
   color: white;
   font-weight: 700;
-  font-size: 1.2em;
+  font-size: .8em;
 }
+#fatfooter p{
+  line-height: 30px;
+}
+ #fatfooter a{
+  color:#fec627;
+ }
+  #fatfooter a:hover{
+  color:#9bb26c;
+ }
+ #fatfooter h1{
+  font-size: 3em;
+  padding:0 0 0 0;
+  margin:0 0 1.6em 0;
+  text-align: left;
+  text-shadow:white 0.01em 0.01em;
+ }
+ #leftfoot{
+  float:left;
+  margin-left: 10%;
+  width:40%;
+ }
+ #rightfoot{
+  float:right;
+  margin-left: 10%;
+  width:40%;
+ }
