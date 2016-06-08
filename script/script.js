@@ -744,6 +744,8 @@ $(document).ready(function() {
       })
     });
 
+//foot parallax
+
 
 //video plug-in//
 videojs('bg-video').Background({

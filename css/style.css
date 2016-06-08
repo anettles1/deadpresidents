@@ -466,13 +466,13 @@ a {
 #fatfooter{
   text-align: left;
   font-family: 'Open Sans', sans-serif;
-  padding-top: 5em;
+  padding-top: 5vw;
   color: white;
   font-weight: 700;
-  font-size: .8em;
+  font-size: .8vw;
 }
 #fatfooter p{
-  line-height: 30px;
+  line-height: 2vw;
 }
  #fatfooter a{
   color:#fec627;
@@ -481,11 +481,11 @@ a {
   color:#9bb26c;
  }
  #fatfooter h1{
-  font-size: 3em;
+  font-size: 3vw;
   padding:0 0 0 0;
-  margin:0 0 1.6em 0;
+  margin:0 0 1.6vw 0;
   text-align: left;
-  text-shadow:white 0.01em 0.01em;
+  text-shadow:white 0.01vw 0.01vw;
  }
  #leftfoot{
   float:left;
