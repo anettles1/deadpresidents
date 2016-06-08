@@ -727,13 +727,13 @@ var chart = c3.generate({
 }(jQuery, window, document));
 
 
-//back to top
+//back to top and share button
 $(document).ready(function() {
       $(window).scroll(function() {
         if ($(this).scrollTop() < 200 || $(this).scrollTop() > $(document).height() - $(window).height() - 300) {
-        $('#top').fadeOut(300);
+        $('#top').fadeOut(300), $('.icons').fadeOut(300);
     } else {
-        $('#top').fadeIn(300);
+        $('#top').fadeIn(300), $('.icons').fadeIn(300);
     }
 });
       
