@@ -727,19 +727,13 @@ var chart = c3.generate({
 }(jQuery, window, document));
 
 
-
-
-
-//back to top button!!!
-$(document).ready(function() {
-      // Show or hide the sticky footer button
-      $(window).scroll(function() {
-        if ($(this).scrollTop() > 200) {
-          $('#top').fadeIn(200);
-        } else {
-          $('#top').fadeOut(200);
-        }
-      });
+//back to top button!!
+$(window).scroll(function() {
+    if ($(this).scrollTop() < 200 || $(this).scrollTop() > $(document).height() - $(window).height() - 200) {
+        $('#top').fadeOut(300);
+    } else {
+        $('#top').fadeIn(250);
+    }
       
       // Animate the scroll to top
       $('#top').click(function(event) {
