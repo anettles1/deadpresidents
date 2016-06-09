@@ -12,6 +12,11 @@ Medium grey: #4f4f57
 Light grey: #9599a5
 Gold: #fec627*/
 
+.blocktext {
+	font-size: 2em;
+	color: #9bb26c;
+	margin-bottom:3%;
+}
 
 .navbar {
   padding-right:50px;
