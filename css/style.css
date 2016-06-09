@@ -25,6 +25,12 @@ Gold: #fec627*/
 #firstGraf {
   font-weight:600;
   color: #4f4f57;
+  margin-top: 2em;
+ 
+}
+
+iframe{
+  margin-bottom: 2em;
 }
 
 /*#video-background {
@@ -98,8 +104,8 @@ h1{
   font-size:1.4em;
   color:#9bb26c;
   font-weight:400;
-  margin-top: 0em;
-    margin-bottom: 1.5em;
+  margin-top: 2em;
+  margin-bottom: 1.5em;
 }
 
 #first-top {
