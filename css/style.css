@@ -12,6 +12,10 @@ Medium grey: #4f4f57
 Light grey: #9599a5
 Gold: #fec627*/
 
+body {
+	podition:fixed;
+}
+
 .blocktext {
 	font-size: 2em;
 	color: #9bb26c;
@@ -45,10 +49,6 @@ video {
   display: block;
   background: url('headervideo/video.webm') no-repeat;
   background-size: cover;
-}
-
-#topvideo {
-	width:102.5%;
 }
 
 #video-background {
@@ -617,5 +617,5 @@ body {
 
 
 .containervideo{
-  width: 97.85%;
+  width: 97.9%;
 }
