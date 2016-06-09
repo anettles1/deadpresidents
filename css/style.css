@@ -287,6 +287,17 @@ a {
   text-decoration: none;
   box-sizing: border-box;
 }
+.social-export{
+  display:none;
+  background-color: #c8cad0;
+  padding:.15em 2.05em;
+}
+.social-export:hover{
+  background-color:#9bb26c;
+  opacity: 1;
+  text-decoration: none;
+
+}
 .icons {
   width: auto;
   display: inline-block;
@@ -295,13 +306,10 @@ a {
   position:fixed;
   bottom:5.5em;
   right:2.5em;
-  background-color: #c8cad0;
-  padding:.15em 2em;
   opacity:.6;
   z-index: 1000;
 }
 .icons:hover{
-  background-color:#9bb26c;
   opacity: 1;
 }
 .icons li {
