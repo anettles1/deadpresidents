@@ -18,10 +18,6 @@ Gold: #fec627*/
 	margin-bottom:3%;
 }
 
-.navbar {
-  padding-right:50px;
-}
-
 #firstGraf {
   font-weight:600;
   color: #4f4f57;
@@ -49,10 +45,6 @@ video {
   display: block;
   background: url('headervideo/video.webm') no-repeat;
   background-size: cover;
-}
-
-#topvideo {
-	width:103%;
 }
 
 #video-background {
