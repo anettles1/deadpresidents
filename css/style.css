@@ -51,6 +51,10 @@ video {
   background-size: cover;
 }
 
+#topvideo {
+	width:103%;
+}
+
 #video-background {
   position: fixed;
   right: 0; 
