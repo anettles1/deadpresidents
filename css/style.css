@@ -40,7 +40,6 @@ video {
   background-size: cover;
 }
 
-
 #video-background {
   position: fixed;
   right: 0; 
@@ -93,8 +92,9 @@ h1{
   font-size:1.4em;
   color:#9bb26c;
   font-weight:400;
-  margin-top: 0em;
-    margin-bottom: 1.5em;
+  margin-top: 2em;
+  margin-bottom: 1.5em;
+
 }
 
 #first-top {
