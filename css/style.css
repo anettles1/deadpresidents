@@ -47,6 +47,10 @@ video {
   background-size: cover;
 }
 
+#topvideo {
+	width:102.5%;
+}
+
 #video-background {
   position: fixed;
   right: 0; 
@@ -226,8 +230,6 @@ figure.show{
 .c3-xgrid-focus {
 display: none;
 }
-
-
 
 /*parallax*/
 
